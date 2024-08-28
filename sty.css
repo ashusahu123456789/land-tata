@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 3px 5px rgb(0,0, 0,0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 80px;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+}
+img:hover{
+    transform: scale(1.11)
+}
+
+nav .navitems{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+}
+
+nav .navitems a{
+    color: black;
+    text-decoration: none;
+}
+
+nav .navitems a::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    display: inline-block;
+    background-color: black;
+    position: relative; 
+    top:30px;
+    border-radius: 20px;
+}
+
+nav .nav-items a:hover::before{
+    width: 100%;
+    transition: all .3s linear;
+}
+nav .nav-icon {
+    display: flex;
+    gap:40px;
+}
+
+nav a:hover{
+
+transform: scale(1.6);
+transition: all 32ms linear;
+
+}
+/* Contact */
+.contact{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
+    .call,.test-drive{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    svg{
+        animation: zoom-up 0.5s linear infinite alternate;
+    }
+}
+@keyframes zoom-up {
+    to{
+        transform: scale(1.1);
+    }
+}
+
+.primary-link{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+/* home */
+.home{
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(90deg,white 600px,rgb(255, 130, 130));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        width: 450px;
+        text-align: center;
+    }
+    .home-text{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: column;
+    }
+}
+.primary-para{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+.primary-head{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+/* Price box */
+.pricebox{
+    height: 50vh;
+    width: 100%;
+    background-color: #212529;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    .pbox1{
+        width: 50%;
+        height: 100%;
+        color: white;
+        margin-top: 40px;
+        margin-left: 80px;
+         .loc{
+            height: 30px;
+            width: 50%;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 180px;
+            border-bottom: 2px solid white;
+            p{
+                font-family: "Noto Sans", sans-serif;
+                font-weight: 300;
+                text-transform: uppercase;
+                color: white;
+            }
+         }
+         .loc:hover{
+            cursor: pointer;
+         }
+         .secondary-para{
+                font-family: "Noto Sans", sans-serif;
+                font-weight: 400;
+                font-size: 13px;
+         }
+    }
+
+    .pbox2{
+        width: 50%;
+        margin-top: 40px;
+        margin-left: 80px;
+        display: flex;
+        p{
+            font-family: "Noto Sans", sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+        h1{
+            margin-top: 0;
+            font-family: "Noto Sans", sans-serif;
+                font-weight: 600;
+                font-size: 3rem;
+        }
+    }
+}
+.cities{
+    height: 300px;
+    width: 335px;
+    background-color: #212529;
+    box-shadow: 1px 1px 10px black;
+    position: absolute;
+    top: 836px;
+    left: 78px;
+    border: none;
+    color: white;
+    font-family: "Noto Sans";
+    p{
+        line-height: 30px;
+    }
+}
+.cities::-webkit-scrollbar{
+    width: 10px;
+
+ }
+ .cities::-webkit-scrollbar-track{
+    width: 10px;
+    background-color: gainsboro;
+ }
+ .cities::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px 5px rgb(0,0,0,0.5) inset;
+    height: 100px;
+ }
+.prbtn{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 180px;
+    height: 40px;
+    
+}
